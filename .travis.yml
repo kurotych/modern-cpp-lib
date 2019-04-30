@@ -1,0 +1,13 @@
+language: cpp
+compiler: gcc
+dist: xenial
+notifications:
+  email: false
+
+script:
+    - mkdir build && cd build
+    - cmake ../
+    - make
+    - ./cprogen_core_tests
+    - cd ../tests
+    - python3 -m unittest
