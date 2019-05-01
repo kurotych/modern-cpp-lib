@@ -1,19 +1,38 @@
 language: cpp
 compiler: gcc
 sudo: required
-dist: xenial
 notifications:
   email: false
 
-before_script:
-  # install cmake
-  - wget -O cmake.sh https://cmake.org/files/v3.10/cmake-3.10.0-rc1-Linux-x86_64.sh
-  - sudo sh cmake.sh --skip-license --exclude-subdir --prefix=/usr/local
-  # build gtest
-  - cd /usr/src/gtest
-  - sudo cmake .
-  - sudo make
-  - sudo cp *.a /usr/lib
+matrix:
+  include:
+    - os: linux
+      dist: xenial
+      before_script:
+        # install cmake
+        - wget -O cmake.sh https://cmake.org/files/v3.10/cmake-3.10.0-rc1-Linux-x86_64.sh
+        - sudo sh cmake.sh --skip-license --exclude-subdir --prefix=/usr/local
+        # build gtest
+        - cd /usr/src/gtest
+        - sudo cmake .
+        - sudo make
+        - sudo cp *.a /usr/lib
+    - os: osx
+      osx_image: xcode10.2
+      before_script:
+        - git clone https://github.com/google/googletest
+        - cd googletest
+        - mkdir build
+        - cd build
+        - cmake ..
+        - make
+        - make install
+      addons:
+        homebrew:
+          packages:
+            - gcovr
+            - lcov
+          update: true
 
 script:
   - cd $TRAVIS_BUILD_DIR
