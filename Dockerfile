@@ -25,9 +25,10 @@ RUN rm -rf /tmp/cmake
 
 RUN cd /usr/src/gtest && cmake . && make && \
     make install
-
+WORKDIR /
 RUN git clone https://github.com/armatusmiles/cprogen-core.git \
     && cd cprogen-core \
+    && git checkout add-gcov \
     && mkdir build && cd build \
     && cmake ../ \
     && make cprogen_core_coverage \
