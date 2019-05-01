@@ -7,7 +7,9 @@ RUN apt-get update && apt-get install -y python3 \
     git \
     libgtest-dev \
     curl \
-    zlib1g-dev
+    zlib1g-dev \
+    gcovr \
+    lcov
 
 # Install CMake
 WORKDIR /tmp/cmake
@@ -28,8 +30,7 @@ RUN git clone https://github.com/armatusmiles/cprogen-core.git \
     && cd cprogen-core \
     && mkdir build && cd build \
     && cmake ../ \
-    && make \
-    && ./tests/cprogen_core_tests \
+    && make cprogen_core_coverage \
     && cd ../tests \
     && python3 -m unittest
 
