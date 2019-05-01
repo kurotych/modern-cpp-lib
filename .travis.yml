@@ -19,8 +19,7 @@ script:
   - cd $TRAVIS_BUILD_DIR
   - mkdir build && cd build
   - cmake ../
-  - make
-  - ./tests/cprogen_core_tests
+  - make cprogen_core_coverage
   - cd ../tests
   - python3 -m unittest
 
@@ -28,3 +27,5 @@ addons:
   apt:
     packages:
       - libgtest-dev
+      - gcovr
+      - lcov
