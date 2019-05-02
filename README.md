@@ -15,7 +15,7 @@
 - [Python bindings](https://github.com/armatusmiles/modern-cpp-lib/blob/master/tests/test_api.py) Load library and call C API function from Python.
 - [Codecov](https://codecov.io/gh/armatusmiles/cprogen-core) - reports generate automatically
 - [Docker](https://github.com/armatusmiles/modern-cpp-lib/blob/master/Dockerfile) file and [auto build](https://hub.docker.com/r/armatusmiles/cprogen-core) with [Docker Hub](https://hub.docker.com/r/armatusmiles/cprogen-core)
-- [Travis-CI](https://travis-ci.org/armatusmiles/cprogen-core) auto build for ubuntu and osx
+- [Travis-CI](https://travis-ci.org/armatusmiles/cprogen-core) auto build for ubuntu xenial and osx
 
 ## Libraries used
 - [Google Test (gtest)](https://github.com/google/googletest) - [test](https://github.com/armatusmiles/modern-cpp-lib/blob/master/tests/main.cpp) framework 
