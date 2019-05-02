@@ -12,9 +12,8 @@ RUN apt-get update && apt-get install -y python3 \
     lcov
 
 # Install CMake
-RUN  wget -O cmake.sh https://cmake.org/files/v3.12/cmake-3.12.0-rc1-Linux-x86_64.sh && \
-    chmod +x ./cmake.sh && \
-    ./cmake.sh --skip-license --exclude-subdir --prefix=/usr/local
+RUN  wget https://cmake.org/files/v3.12/cmake-3.12.0-rc1-Linux-x86_64.sh -O cmake.sh && \
+     chmod +x cmake.sh && ./cmake.sh --skip-license --exclude-subdir --prefix=/usr/local
 ###############
 
 RUN cd /usr/src/gtest && cmake . && make && \

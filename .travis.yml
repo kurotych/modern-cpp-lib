@@ -1,5 +1,4 @@
 language: cpp
-compiler: gcc
 sudo: required
 notifications:
   email: false
@@ -8,6 +7,7 @@ matrix:
   include:
     - os: linux
       dist: xenial
+      compiler: gcc
       before_script:
         # install cmake
         - wget -O cmake.sh https://cmake.org/files/v3.12/cmake-3.12.0-rc1-Linux-x86_64.sh
@@ -19,6 +19,7 @@ matrix:
         - sudo cp *.a /usr/lib
     - os: osx
       osx_image: xcode10.2
+      compiler: clang
       before_script:
         - git clone https://github.com/google/googletest
         - cd googletest
