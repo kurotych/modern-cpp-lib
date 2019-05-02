@@ -7,4 +7,4 @@
 [![codecov](https://codecov.io/gh/armatusmiles/cprogen-core/branch/master/graph/badge.svg)](https://codecov.io/gh/armatusmiles/cprogen-core)
 
 ## references
-https://github.com/LearningByExample/ModernCppCI/
+- https://github.com/LearningByExample/ModernCppCI/
