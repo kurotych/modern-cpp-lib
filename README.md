@@ -2,6 +2,7 @@
 
 ## Investigates best way to build modern project for develop UNIX C++ library based on C API for binding any language. 
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7673e38427c340dd8e534f8f39a91a7f)](https://app.codacy.com/app/armatusmiles/modern-cpp-lib?utm_source=github.com&utm_medium=referral&utm_content=armatusmiles/modern-cpp-lib&utm_campaign=Badge_Grade_Dashboard)
 [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/armatusmiles/cprogen-core.svg)](https://hub.docker.com/r/armatusmiles/cprogen-core)
 [![codecov](https://codecov.io/gh/armatusmiles/cprogen-core/branch/master/graph/badge.svg)](https://codecov.io/gh/armatusmiles/cprogen-core)
 
