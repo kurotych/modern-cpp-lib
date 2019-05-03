@@ -21,6 +21,16 @@
 - [Google Test (gtest)](https://github.com/google/googletest) - [test](https://github.com/armatusmiles/modern-cpp-lib/blob/master/tests/main.cpp) framework 
 - [gcov](https://linux.die.net/man/1/gcov) / [lcov](https://linux.die.net/man/1/lcov) - generates and shows in html format code coverage
 
+## Build and Run
+```
+git clone https://github.com/armatusmiles/cprogen-core.git \
+    && cd cprogen-core \
+    && mkdir build && cd build \
+    && cmake ../ \
+    && make cprogen_core_coverage
+``` 
+
+> "make cprogen_core_coverage" builds library, runs gtest and generate code coverage(html) report
 
 ## References
 - [ModernCppCI](https://github.com/LearningByExample/ModernCppCI)
