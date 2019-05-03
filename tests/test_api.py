@@ -18,6 +18,8 @@ class TestInterfaceFunctions(unittest.TestCase):
 
         def test_add(self):
                 self.assertEqual(self.libcprogen_core.add(2, 2), 4)
+        def test_sub(self):
+                self.assertEqual(self.libcprogen_core.sub(2, 2), 0)
 
 if __name__ == '__main__':
         unittest.main()
