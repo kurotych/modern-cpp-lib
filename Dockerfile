@@ -23,7 +23,7 @@ RUN git clone https://github.com/armatusmiles/cprogen-core.git \
     && cd cprogen-core \
     && mkdir build && cd build \
     && cmake ../ \
-    && make cprogen_core_coverage \
+    && make moderncpp_coverage \
     && cd ../tests \
     && python3 -m unittest
 

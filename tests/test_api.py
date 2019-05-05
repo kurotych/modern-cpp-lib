@@ -6,7 +6,7 @@ import platform
 class TestInterfaceFunctions(unittest.TestCase):
 
         def setUp(self):
-                lib_path = "../build/libcprogen_core."
+                lib_path = "../build/libmoderncpp."
                 if platform.system() == 'Linux':
                         lib_path += "so"
                 elif platform.system() == 'Darwin':
@@ -14,12 +14,12 @@ class TestInterfaceFunctions(unittest.TestCase):
                 else:
                         raise Exception('Not supported platform')
 
-                self.libcprogen_core = ctypes.cdll.LoadLibrary(lib_path)
+                self.libmoderncpp = ctypes.cdll.LoadLibrary(lib_path)
 
         def test_add(self):
-                self.assertEqual(self.libcprogen_core.add(2, 2), 4)
+                self.assertEqual(self.libmoderncpp.add(2, 2), 4)
         def test_sub(self):
-                self.assertEqual(self.libcprogen_core.sub(2, 2), 0)
+                self.assertEqual(self.libmoderncpp.sub(2, 2), 0)
 
 if __name__ == '__main__':
         unittest.main()

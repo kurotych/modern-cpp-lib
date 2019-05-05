@@ -28,10 +28,10 @@ git clone https://github.com/armatusmiles/cprogen-core.git \
     && cd cprogen-core \
     && mkdir build && cd build \
     && cmake ../ \
-    && make cprogen_core_coverage
+    && make moderncpp_coverage
 ``` 
 
-> "make cprogen_core_coverage" builds library, runs gtest and generate code coverage(html) report
+> "make moderncpp_coverage" builds library, runs gtest and generate code coverage(html) report
 
 ## References
 - [ModernCppCI](https://github.com/LearningByExample/ModernCppCI)
