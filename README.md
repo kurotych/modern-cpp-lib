@@ -12,7 +12,8 @@
 
 ## Features
 -   Creates shared(*.so, *.dylib) library
--   [Unit testing](https://github.com/armatusmiles/modern-cpp-lib/blob/master/tests/main.cpp) with gtest
+-   [Google test(gtest)](https://github.com/armatusmiles/modern-cpp-lib/blob/master/tests/main.cpp) simple unit framework
+-   [Catch2](https://github.com/armatusmiles/modern-cpp-lib/tree/add-catch2/tests-catch2) single header test library
 -   [Python bindings](https://github.com/armatusmiles/modern-cpp-lib/blob/master/tests/test_api.py) Load library and call C API function from Python.
 -   [Codecov](https://codecov.io/gh/armatusmiles/cprogen-core) - reports generate automatically
 -   [Docker](https://github.com/armatusmiles/modern-cpp-lib/blob/master/Dockerfile) file and [auto build](https://hub.docker.com/r/armatusmiles/cprogen-core) with [Docker Hub](https://hub.docker.com/r/armatusmiles/cprogen-core)
@@ -31,8 +32,11 @@ git clone https://github.com/armatusmiles/modern-cpp-lib.git \
     && make moderncpp_coverage
 ``` 
 
+###### Notice: For choose catch2 test framework. Should add var -DTEST_TYPE="catch2"</br> Exmaple : cmake ../ -DTEST_TYPE="catch2"
+
 > "make moderncpp_coverage" builds library, runs gtest and generate code coverage(html) report
 
 ## References
 -   [ModernCppCI](https://github.com/LearningByExample/ModernCppCI)
 -   [cmake-modules](https://github.com/bilke/cmake-modules)
+-   [Catch2](https://github.com/catchorg/Catch2)
