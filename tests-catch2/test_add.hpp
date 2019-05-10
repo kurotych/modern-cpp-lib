@@ -1,7 +1,3 @@
-//
-// Created by armatusmiles on 10.05.19.
-//
-
 #ifndef MODERNCPP_TEST_ADD_HPP
 #define MODERNCPP_TEST_ADD_HPP
 #include <catch.hpp>
