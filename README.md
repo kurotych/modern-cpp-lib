@@ -24,8 +24,8 @@
 
 ## Build and Run
 ```
-git clone https://github.com/armatusmiles/cprogen-core.git \
-    && cd cprogen-core \
+git clone https://github.com/armatusmiles/modern-cpp-lib.git \
+    && cd modern-cpp-lib \
     && mkdir build && cd build \
     && cmake ../ \
     && make moderncpp_coverage
