@@ -31,6 +31,8 @@ git clone https://github.com/armatusmiles/modern-cpp-lib.git \
     && make moderncpp_coverage
 ``` 
 
+###### Notice: For choose catch2 test framework. Should add var -DTEST_TYPE="catch2"</br> Exmaple : cmake ../ -DTEST_TYPE="catch2"
+
 > "make moderncpp_coverage" builds library, runs gtest and generate code coverage(html) report
 
 ## References
