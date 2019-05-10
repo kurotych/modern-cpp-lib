@@ -4,11 +4,11 @@
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7673e38427c340dd8e534f8f39a91a7f)](https://app.codacy.com/app/armatusmiles/modern-cpp-lib?utm_source=github.com&utm_medium=referral&utm_content=armatusmiles/modern-cpp-lib&utm_campaign=Badge_Grade_Dashboard)
 [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/armatusmiles/moderncpp.svg)](https://hub.docker.com/r/armatusmiles/moderncpp)
-[![codecov](https://codecov.io/gh/armatusmiles/cprogen-core/branch/master/graph/badge.svg)](https://codecov.io/gh/armatusmiles/cprogen-core)
+[![codecov](https://codecov.io/gh/armatusmiles/cprogen-core/branch/master/graph/badge.svg)](https://codecov.io/gh/armatusmiles/modern-cpp-lib)
 
 | Build status          | Systems / Compilers         |
 | ------------- | ------------------------------------------ |
-| [![Build Status](https://travis-ci.org/armatusmiles/cprogen-core.svg?branch=master)](https://travis-ci.org/armatusmiles/cprogen-core) | Linux (gcc)   OSX (XCode 10.2 clang) |
+| [![Build Status](https://travis-ci.org/armatusmiles/modern-cpp-lib.svg?branch=master)](https://travis-ci.org/armatusmiles/modern-cpp-lib) | Linux (gcc)   OSX (XCode 10.2 clang) |
 
 ## Features
 -   Creates shared(*.so, *.dylib) library
@@ -24,8 +24,8 @@
 
 ## Build and Run
 ```
-git clone https://github.com/armatusmiles/cprogen-core.git \
-    && cd cprogen-core \
+git clone https://github.com/armatusmiles/modern-cpp-lib.git \
+    && cd modern-cpp-lib \
     && mkdir build && cd build \
     && cmake ../ \
     && make moderncpp_coverage
