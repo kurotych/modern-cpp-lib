@@ -6,7 +6,7 @@ import platform
 class TestInterfaceFunctions(unittest.TestCase):
 
         def setUp(self):
-                lib_path = "../build/libmoderncpp."
+                lib_path = "./build/libmoderncpp."
                 if platform.system() == 'Linux':
                         lib_path += "so"
                 elif platform.system() == 'Darwin':
