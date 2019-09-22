@@ -18,6 +18,7 @@
 -   [Codecov](https://codecov.io/gh/armatusmiles/modern-cpp-lib) - reports generate automatically
 -   [Docker](https://github.com/armatusmiles/modern-cpp-lib/blob/master/Dockerfile) file and [auto build](https://hub.docker.com/r/armatusmiles/moderncpp) with [Docker Hub](https://hub.docker.com/r/armatusmiles/moderncpp)
 -   [Travis-CI](https://travis-ci.org/armatusmiles/moderncpp) auto build for ubuntu xenial and osx
+-   [Cppcheck](http://cppcheck.sourceforge.net) is a static analysis tool for C/C++ code
 
 ## Libraries used
 -   [Google Test (gtest)](https://github.com/google/googletest) - [test](https://github.com/armatusmiles/modern-cpp-lib/blob/master/tests/main.cpp) framework 
@@ -32,6 +33,16 @@ git clone https://github.com/armatusmiles/modern-cpp-lib.git \
     && make moderncpp_coverage
 ``` 
 
+<details>
+  <summary>cppcheck  simple example</summary>
+    
+    cppcheck ./src/
+    
+    Checking src/interface.cpp ...
+    [src/interface.cpp:11]: (error) Array 'a[5]' accessed at index 6, which is out of bounds.
+
+</details>
+
 ###### Notice: For choose catch2 test framework. Should add var -DTEST_TYPE="catch2"</br> Exmaple : cmake ../ -DTEST_TYPE="catch2"
 
 > "make moderncpp_coverage" builds library, runs gtest and generate code coverage(html) report
@@ -40,3 +51,4 @@ git clone https://github.com/armatusmiles/modern-cpp-lib.git \
 -   [ModernCppCI](https://github.com/LearningByExample/ModernCppCI)
 -   [cmake-modules](https://github.com/bilke/cmake-modules)
 -   [Catch2](https://github.com/catchorg/Catch2)
+-   [cppcheck manual](http://cppcheck.sourceforge.net/manual.pdf)
