@@ -17,14 +17,15 @@ RUN  wget https://cmake.org/files/v3.12/cmake-3.12.0-rc1-Linux-x86_64.sh -O cmak
 ###############
 
 RUN cd /usr/src/gtest && cmake . && make && \
-    make install
+    make && cp *.a /usr/lib
+
 WORKDIR /
 RUN git clone https://github.com/armatusmiles/cprogen-core.git \
     && cd cprogen-core \
     && mkdir build && cd build \
     && cmake ../ \
     && make moderncpp_coverage \
-    && cd ../tests \
+    && cd .. \
     && python3 -m unittest
 
 CMD ["/bin/bash"]
