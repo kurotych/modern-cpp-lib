@@ -12,9 +12,9 @@
 
 ## Features
 -   Creates shared(*.so, *.dylib) library
--   [Google test(gtest)](https://github.com/armatusmiles/modern-cpp-lib/blob/master/tests/main.cpp) simple unit framework
+-   [Google test(gtest)](https://github.com/armatusmiles/modern-cpp-lib/blob/master/tests/main.cpp) simple and powerful test framework
 -   [Catch2](https://github.com/armatusmiles/modern-cpp-lib/tree/add-catch2/tests-catch2) single header test library
--   [Python bindings](https://github.com/armatusmiles/modern-cpp-lib/blob/master/tests/test_api.py) Load library and call C API function from Python.
+-   [Python bindings](https://github.com/armatusmiles/modern-cpp-lib/blob/master/test_api.py) Load library and call C API function from Python.
 -   [Codecov](https://codecov.io/gh/armatusmiles/modern-cpp-lib) - reports generate automatically
 -   [Docker](https://github.com/armatusmiles/modern-cpp-lib/blob/master/Dockerfile) file and [auto build](https://hub.docker.com/r/armatusmiles/moderncpp) with [Docker Hub](https://hub.docker.com/r/armatusmiles/moderncpp)
 -   [Travis-CI](https://travis-ci.org/armatusmiles/moderncpp) auto build for ubuntu xenial and osx
